@@ -1,0 +1,69 @@
+# 197 Roussillon - Principal cities: Perpignan
+
+owner = TOU
+controller = TOU
+capital = "Perpignan"
+citysize = 5000
+culture = catalan
+religion = cathar
+hre = no
+base_tax = 4
+trade_goods = wine
+manpower = 4
+add_core = ARA
+add_core = TOU
+fort1 = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+1399.1.1 = { add_core = FOI }
+1412.6.29  = { revolt = { type = pretender_rebels size = 1 leader = "Jaume d'Urgell"} controller = REB } # Jaime de Urgell Uprising
+1413.1.1   = { revolt = {} controller = ARA }
+1450.1.1   = { citysize = 6000}
+1462.1.1   = { owner = FRA controller = FRA } # Treaty of Bayonne: Aragon sells Roussillon to France
+1493.1.19  = { owner = ARA controller = ARA } # Treaty of Barcelona: Charles VIII restores Roussillon to Aragon
+1500.1.1   = { citysize = 7000 }
+1510.1.1   = { fort2 = yes }
+1516.1.23  = {	owner = SPA
+		controller = SPA
+	     	add_core = SPA
+	     } # Spain comes into existence, Carlos I rises to the throne
+1550.1.1   = { citysize = 8000 }
+1600.1.1   = { citysize = 9000 }
+1601.1.1   = { temple = yes } # Cathedral finished
+1610.1.1   = { fort3 = yes }
+1650.1.1   = { citysize = 10000 }
+1659.10.28 = { owner = FRA controller = FRA add_core = FRA } # Peace of the Pyrennees
+1660.1.1   = { fort4 = yes }
+1670.1.1   = { constable = yes }
+1674.8.10  = { controller = SPA } # Spain invades Roussillon again
+1678.9.19  = { controller = FRA remove_core = SPA } # Treaty of Nijmegen (FRA-SPA)
+1700.1.1   = { citysize = 11000 marketplace = yes }
+1713.7.13  = { remove_core = ARA }
+1750.1.1   = { citysize = 12000 courthouse = yes }
+1760.1.1   = { tax_assessor = yes }
+1791.6.20  = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = FRA
+	     }
+1793.4.17  = { controller = SPA } # Occupied by the Spanish army
+1793.5.1   = { controller = RFR }
+1800.1.1   = { citysize = 13000 }
+1814.4.11  = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	     } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
+1815.3.20  = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = FRA
+	     } # Napoleon enters Paris
+1815.7.8   = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	     } # The French monarchy is restored

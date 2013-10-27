@@ -1,0 +1,7 @@
+# Polish vassal
+vassal = {
+	first = HUN
+	second = TRA
+	start_date = 1399.10.14
+	end_date = 1444.11.11
+}

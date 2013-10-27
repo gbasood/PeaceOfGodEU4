@@ -1,0 +1,83 @@
+# 175 Armagnac - Principal cities: Auch
+
+owner = AMG
+controller = AMG
+capital = "Auch"
+citysize = 1500
+culture = gascon
+religion = cathar
+hre = no
+base_tax = 5
+trade_goods = wool
+manpower = 4
+add_core = AMG
+add_core = GUY
+add_core = FRA
+fort1 = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+1399.1.1 = { add_core = ENG }
+1450.1.1   = { citysize = 2000 }
+1475.8.29  = { remove_core = ENG } # Treaty of Picquigny
+1500.1.1   = { citysize = 3000 }
+1540.1.1   = { fort2 = yes }
+1549.12.22 = {	owner = AUV
+		controller = AUV
+		add_core = AUV
+		remove_core = AMG
+	     }
+1550.1.1   = { citysize = 5000 marketplace = yes }
+1560.1.1   = { religion = reformed }
+1565.1.1   = { revolt_risk = 8 } # France is restless once again as ultra-catholic intentions become clear
+1568.9.1   = { revolt_risk = 15 } # Catherine de Medici and Charles IX side with the Guise faction, religious intolerance peaks
+1570.8.8   = { revolt_risk = 10 } # Edict of Saint-Germain: temporary pacification
+1573.9.1   = { revolt_risk = 15 } # Saint Barthelew's Day Massacre: the consequences in the land
+1574.5.1   = { revolt_risk = 7 } # Charles IX dies, situation cools a bit	
+1584.1.1   = { revolt_risk = 12 } # Situation heats up again
+1588.12.1  = { revolt_risk = 15 } # Henri de Guise assassinated at Blois, Ultra-Catholics into a frenzy
+1589.1.5   = { owner = NAV controller = NAV add_core = NAV remove_core = AUV }
+1589.8.2   = { owner = FRA controller = FRA } # Armagnac to France proper, after Henri IV, King of France & Duke of Armagnac
+1594.1.1   = { revolt_risk = 10 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
+1595.1.1   = { regimental_camp = yes }
+1598.4.13  = { revolt_risk = 3 } # Edict of Nantes, alot more freedom to the protestants
+1598.5.2   = { revolt_risk = 0 } # Peace of Vervins, formal end to the Wars of Religion
+1600.1.1   = { citysize = 7000 }
+1630.1.1   = { constable = yes }
+1640.1.1   = { fort3 = yes }
+1650.1.1   = { citysize = 8000 }
+1650.1.14  = { revolt_risk = 7 } # Mazarin arrests the Princes Condé, Conti & Longueville, the beginning of the Second Fronde
+1651.4.1   = { revolt_risk = 4 } # An unstable peace is concluded
+1651.12.1  = { revolt_risk = 7 } # Mazarin returns from exile, Condé sides with Spain, situation heats up again
+1652.10.21 = { revolt_risk = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
+1670.1.1   = { fort4 = yes }
+1685.10.18 = { revolt_risk = 8 } # Edict of Nantes revoked by Louis XIV
+1686.1.17  = { religion = catholic } # Dragonnard campaign succesful: region reverts back to catholicism
+1689.1.1   = { revolt_risk = 0 } # War of the Grand Alliance erupts: Louis XIV can't persue his religious policy anymore
+1700.1.1   = { citysize = 9000 }
+1730.1.1   = { courthouse = yes }
+1750.1.1   = { citysize = 10000 }
+1760.1.1   = { tax_assessor = yes }
+1791.6.20  = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = FRA
+	     }
+1800.1.1   = { citysize = 15000 }
+1814.4.11  = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	     } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
+1815.3.20  = {	owner = RFR
+		controller = RFR
+		add_core = RFR
+		remove_core = FRA
+	     } # Napoleon enters Paris
+1815.7.8   = {	owner = FRA
+		controller = FRA
+		add_core = FRA
+		remove_core = RFR
+	     } # The French monarchy is restored

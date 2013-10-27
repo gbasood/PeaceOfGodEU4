@@ -1,0 +1,14 @@
+crusader_group = {
+	galilean = {
+		primary = KOJ
+		dynasty_names = {
+			"d'Acre" "de Jérusalem" "de Tyr"
+		}
+	}
+	ptolemaic = {
+		primary = ALX
+		dynasty_names = {
+			Akropolites Kaukadenos Komnenos Monomakos Rhadinos
+		}
+	}
+}

@@ -1,0 +1,14 @@
+bookmark =
+{
+	name = "POGNAME"
+	desc = "POG_DESC"
+	date = 1399.10.14
+	
+	country = TOU
+	country = BYZ
+	country = KNI
+	country = ARM
+	country = KOJ
+	country = ALX
+	country = PAP
+}

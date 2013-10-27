@@ -1,0 +1,44 @@
+#222 - Almería
+
+owner = SPA
+controller = SPA
+add_core = SPA
+add_core = GRA
+culture = andalucian
+religion = catholic
+hre = no
+base_tax = 2
+trade_goods = grain
+manpower = 2
+fort1 = yes
+capital = "Almería" 
+citysize = 8000
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+1444.1.1   = { add_core = CAS }
+1450.1.1   = { citysize = 9000 }
+1487.1.1   = { revolt = { type = religious_rebels size = 2 } controller = REB } # After King Muhammad X pacts with the Catholic Kings, Muhammad El Zagal flees to Almería to proceed the war against the christians from there.
+1489.12.10 = { revolt = {} controller = CAS owner = CAS } # After the capitulation of the town of Baza, Sultan Muhammad El Zagal gives the port of Almería to the Catholic Kings
+1499.12.1  = { revolt_risk = 2 } # The Inquisition forces Spanish muslims to convert back to Christianity. Occasional revolts occur.
+1500.1.1   = { citysize = 10870 }
+1502.2.1   = { revolt_risk = 0 religion = catholic } # New capitulations where all the subjects of Granada are baptised and fully incorporated into the legal system of Castilla
+1516.1.23  = {	controller = SPA
+		owner = SPA
+		add_core = SPA
+	     } # King Fernando dies, Carlos inherits Aragon and becomes co-regent of Castille
+1550.1.1   = { citysize = 12500 }
+1568.12.25 = { revolt_risk = 15 } # Sublevation of the morisques in the kingdom of Granada.
+1570.10.28 = { revolt_risk = 0 culture = castillian } # To quell the revolt, the morisques in Granada are forcefully deported to other Spanish territories
+1600.1.1   = { citysize = 13800 }
+1650.1.1   = { citysize = 14300 }
+1700.1.1   = { citysize = 15000 }
+1713.4.11  = { remove_core = CAS }
+1750.1.1   = { citysize = 16720 }
+1800.1.1   = { citysize = 18750 }
+1808.6.6   = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+1811.1.1   = { revolt = {} controller = SPA }
+1812.10.1  = { revolt = { type = pretender_rebels size = 0 } controller = REB }
+1813.12.11 = { revolt = {} controller = SPA }

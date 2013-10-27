@@ -1,0 +1,53 @@
+#205 - Savoie
+
+owner = SAV
+controller = SAV
+culture = lombard
+religion = cathar
+hre = yes
+base_tax = 11
+trade_goods = cloth
+manpower = 5
+fort1 = yes
+capital = "Chambéry"
+citysize = 9000		# Estimated
+add_core = SAV
+marketplace = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+1450.1.1   = { citysize = 9800 }
+1499.1.1   = { owner = FRA controller = FRA add_core = FRA } 
+1500.1.1   = { citysize = 10040 }
+1529.1.1   = { owner = SAV controller = SAV } 
+1536.4.1   = { controller = FRA } 
+1538.6.17  = { owner = FRA } # Treaty of Nice
+1550.1.1   = { citysize = 11070 }
+1559.1.1   = { owner = SAV controller = SAV remove_core = FRA } 
+1600.1.1   = { citysize = 10350 }
+1650.1.1   = { citysize = 11580 marketplace = yes }
+1680.1.1   = { courthouse = yes }
+1700.1.1   = { citysize = 11000 tax_assessor = yes }
+1713.4.12  = {	owner = SIC
+		controller = SIC
+		add_core = SIC
+		remove_core = SAV
+	     } # Treaty of Utrecht(2) gave Sicily to the House of Savoy 
+1720.1.1   = {	owner = SPI
+		controller = SPI
+		add_core = SPI
+		remove_core = SIC
+	     } # Kingdom of Piedmont-Sardinia
+1750.1.1   = { citysize = 11500 }
+1791.6.20  = { controller = RFR } # Occupied by French troops
+1792.11.27 = {	owner = RFR
+		add_core = RFR
+	     } # Savoie is annexed
+1800.1.1   = { citysize = 12000 }
+1806.7.12  = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11  = {	owner = SPI
+		controller = SPI
+		remove_core = RFR
+	     } # Napoleon abdicates and Victor Emmanuel is able to return to Turin

@@ -1,0 +1,37 @@
+#1854 - Negev
+
+owner = KOJ
+controller = KOJ
+culture = al_misr_arabic
+religion = sunni
+capital = "Beersheba"
+trade_goods = salt
+hre = no
+base_tax = 1
+manpower = 1
+citysize = 2100
+fort1 = yes
+add_core = MAM
+add_core = MAM
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = nomad_group
+discovered_by = indian
+discovered_by = ETH
+discovered_by = ADA
+discovered_by = NUB
+discovered_by = ZAN
+discovered_by = ZIM
+
+1450.1.1 = { citysize = 2250 }
+1500.1.1 = { citysize = 2400 }
+1517.1.1 = { owner = TUR controller = TUR add_core = TUR } # Conquered by the Ottomans
+1550.1.1 = { citysize = 2910 }
+1600.1.1 = { citysize = 3330 }
+1650.1.1 = { citysize = 1005 } # Decline in trade, agriculture and population
+1690.1.1 = { marketplace = yes }
+1700.1.1 = { citysize = 1802 }
+1750.1.1 = { citysize = 2645 }
+1800.1.1 = { citysize = 3800 }

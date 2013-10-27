@@ -1,0 +1,35 @@
+#1972 - Udmurtia
+
+owner = KAZ
+controller = KAZ
+capital = "Izhkar"
+culture = uralic
+religion = shamanism
+trade_goods = iron
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 20050
+fort1 = yes
+add_core = KAZ
+discovered_by = SIB
+discovered_by = NOG
+discovered_by = GOL
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group
+
+1399.10.14 = { owner = GOL controller = GOL add_core = GOL } # remove_core = LIV }
+1444.11.11 = { owner = KAZ controller = KAZ add_core = KAZ } # remove_core = LIV }
+1450.1.1 = { citysize = 23450 }
+1500.1.1 = { citysize = 36250 }
+1550.1.1 = { citysize = 39760 }
+1552.10.2  = { owner = RUS controller = RUS add_core = RUS remove_core = KAZ } # Russian conquest of Kazan
+1600.1.1 = { culture = russian religion = orthodox citysize = 24230 }
+1650.1.1 = { citysize = 17210 }
+1700.1.1 = { citysize = 18350 }
+1750.1.1 = { citysize = 20120 }
+1760.1.1 = { capital = "Izhevsk" }
+1773.9.13  = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB revolt_risk = 6 } # Pugachev rebellion
+1775.2.1 = { revolt = {} controller = RUS revolt_risk = 0 } # Pugachev is captured
+1800.1.1 = { citysize = 17020 }

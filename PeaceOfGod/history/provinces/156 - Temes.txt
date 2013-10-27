@@ -1,0 +1,71 @@
+#156 - Temes
+
+owner = HUN
+controller = HUN 
+culture = hungarian
+religion = catholic
+capital = "Timisoara"
+trade_goods = wool
+hre = no
+base_tax = 2
+manpower = 2
+citysize = 5640
+fort1 = yes
+add_core = HUN
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+1399.10.14 = { owner = TRA controller = TRA add_core = TRA remove_core = HUN }
+1444.11.11 = { owner = HUN controller = HUN add_core = HUN } # remove_core = TEU }
+1450.1.1 = { citysize = 6480 }
+1500.1.1 = { citysize = 7394 }
+1510.1.1 = { citysize = 6451 } # Great plague
+1514.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # Rebel peasant troops led by Gheorghe Doja
+1514.6.1 = { revolt = {} controller = TRA } # Estimated
+1526.8.30 = {
+	owner = TRA 
+	add_core = TRA
+} #Hungary fractured after Battle of Mohacs, controller since 1514
+1550.1.1 = { citysize = 8767 }
+1551.7.19 = {
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+	add_core = TUR
+} # Ferdinand gains Transylvania from Treaty of Weissenburg, provoking the Ottomans
+1552.7.17 = { controller = TUR } # Ottoman occupation of Temesvar, gained control over region
+1556.10.1 = {
+	owner = TRA
+	controller = TRA
+}# Isabella Jagiello is restored as queen of Transylvania, and cedes Banat
+1562.6.1 = { remove_core = HAB } # The end of the Ottoman-Habsburg War
+1567.1.1 = { religion = reformed } # Synod of Debrecen
+1570.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = HAB
+	remove_core = TRA
+} #Treaty of Speyer gives Temes to Habsburgs, but Ottomans hold the region
+1600.1.1 = { citysize = 11264 }
+1650.1.1 = { citysize = 13067 }
+1700.1.1 = { citysize = 11670 }
+1703.1.1 = { revolt = { type = nationalist_rebels size = 1 } controller = REB } # Kuruc rebellion, lead by Francisc Rakoczy
+1718.1.1 = {
+	revolt = {}
+	owner = HAB
+	controller = HAB
+	remove_core = TUR
+} # The House of Habsburg is recognized as new ruler
+1720.1.1 = { marketplace = yes courthouse = yes }
+1723.4.25 = { fort2 = yes } # New fortress is constructed
+1728.1.1 = { workshop = yes }
+1738.1.1 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Uprising against the imperial authority
+1738.2.1 = { citysize = 8929 } # Plague
+1739.1.1 = { revolt = {} controller = HAB }
+1750.1.1 = { citysize = 9036 }
+1762.1.1 = { fort3 = yes citysize = 11634 } # Arad fortress established, plague
+1769.1.1 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # Anti Habsburg uprisings
+1770.1.1 = { revolt = {} controller = HAB } # Estimated
+1800.1.1 = { citysize = 6450 }

@@ -1,0 +1,61 @@
+#447 - Kandahar
+
+owner = BAL
+controller = BAL
+culture = east_persian
+religion = zoroastrian
+capital = "Kandahar"
+trade_goods = wool
+hre = no
+base_tax = 3
+manpower = 5
+citysize = 4237
+add_core = TIM
+add_core = BAL
+add_core = AFG
+add_core = KHO
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = nomad_group
+fort1 = yes
+
+1449.1.1 = {
+	owner = KHO
+	controller = KHO
+	remove_core = TIM
+} # The Timurid Successor state, ruled by Babur Ibn-Baysunkur
+1450.1.1 = { citysize = 4750 }
+1500.1.1 = { citysize = 5044 }
+1507.1.1 = { controller = SHY }
+1507.7.1 = {	owner = SHY } # Shaybanids
+1510.1.1 = {	owner = PER
+	controller = PER
+	add_core = PER
+} # Part of the Persian empire
+1545.1.1 = {	owner = MUG
+	controller = MUG
+	add_core = MUG
+} # Conquered by Mughals
+1550.1.1 = { citysize = 6437 }
+1558.1.1 = { controller = PER owner = PER } #Seized by Safavids
+1595.1.1 = { owner = MUG controller = MUG } #Persian governor coerced into giving the province to the Mughals
+1600.1.1 = { citysize = 7350 discovered_by = TUR }
+1617.1.1 = { controller = PER }
+1618.1.1 = { owner = PER } #Conquered by Persia
+1637.1.1 = { controller = MUG }
+1638.1.1 = { owner = MUG } #Restored to Mughal Empire
+1649.1.1 = { controller = PER } #Recaptured by Safavids
+1653.1.1 = { owner = PER remove_core = MUG }
+1700.1.1 = { citysize = 8450 }
+1704.1.1 = { revolt_risk = 5 } # Afghanian revolts
+1708.1.1 = { revolt_risk = 8 } # Mir Wais rebelled against Persian rule
+1736.1.1 = { revolt_risk = 0 } # Persia reasserts control over Qandahar
+1747.6.1 = {
+	owner = AFG
+	controller = AFG
+	add_core = AFG
+	remove_core = PER
+} # Ahmad Shah established the Durrani empire
+1750.1.1 = { citysize = 11879 }
+1800.1.1 = { citysize = 12420 }
