@@ -9,5 +9,6 @@ Description
 
 Contributing
 ----
+**PLEASE NOTE** The develop branch is the one I'm using to store changes before they're brought into the master (release) branch.
 In order to contribute, fork the repository, then create a branch in your fork. Make the changes you want, then create a pull request.
     
