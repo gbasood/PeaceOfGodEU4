@@ -1,5 +1,4 @@
 ﻿l_english:
- ALX: "Alexandria"
  ADA: "Adal"
  ADE: "Yemen"
  AKK: "Aq Qoyunlu"
@@ -7,6 +6,7 @@
  ALG: "Algiers"
  ALH: "Haasa"
  ALS: "Alsace"
+ ALX: "Alexandria"
  AMG: "Armagnac"
  ANH: "Anhalt"
  ANN: "Annam"
@@ -283,6 +283,7 @@
  ALG_ADJ: "Algerian"
  ALH_ADJ: "Haasalese"
  ALS_ADJ: "Alsatian"
+ ALX_ADJ: "Alexandrite"
  AMG_ADJ: "Armagnac"
  ANH_ADJ: "Anhaltian"
  ANN_ADJ: "Annamese"

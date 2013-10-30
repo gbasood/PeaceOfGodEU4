@@ -5,3 +5,4 @@ tags=
  "Alternate History"
  "Gameplay"
  }
+picture="peaceofgodcover.jpg"
