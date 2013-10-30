@@ -1,0 +1,7 @@
+#Trebizond guaranteed by Georgia
+guarantee = {
+	first = GEO
+	second = TRE
+	start_date = 1398.1.1
+	end_date = 1461.1.1
+}
