@@ -11,6 +11,8 @@ christian = {
 			reformed
 			protestant
 			catholic
+			cathar
+			hussite
 		}
 		country = {
 			tolerance_own = 1
@@ -139,6 +141,27 @@ christian = {
 		}
 		
 		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST DEIST DOCETIST ICONOCLAST }
+	}
+
+	hussite = {
+		color = { 0.631 0.690 0.737 }			# { 161 176 188 } Non-Crusader
+
+		allowed_conversion = {
+			catholic
+			protestant
+			reformed
+			anglican
+		}
+		province = {
+			local_missionary_strength = -0.01
+		}
+		country = {
+			tolerance_heathen = 1
+		}
+		
+		heretic = { FUNDAMENTALIST POPULIST REACTIONARY REFORMIST DEIST DOCETIST ICONOCLAST }
+		
+		date = 1415.1.1
 	}
 	
 	crusade_name = CRUSADE
