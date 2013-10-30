@@ -1,0 +1,41 @@
+#143 - Albania
+
+owner = ALB
+controller = ALB
+culture = albanian
+religion = orthodox
+capital = "Durazzo"
+trade_goods = wool
+hre = no
+base_tax = 1
+manpower = 1
+citysize = 6000
+fort1 = yes
+add_core = ALB
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western
+
+1399.1.1 = { add_core = VEN add_core = BYZ }
+1431.1.1 = { add_core = TUR }
+1443.3.4 = { owner = ALB controller = ALB capital = "Durrës" } # Skanderbeg's rebellion. The League of Lezhe
+1450.1.1 = { citysize = 7300 }
+1453.5.29 = { remove_core = BYZ }
+1478.6.16 = { owner = TUR controller = TUR }
+1500.1.1 = { citysize = 10254 }
+1520.1.1 = { religion = sunni } # Predominant religion under Turkish rule
+1550.1.1 = { citysize = 13780 }
+1555.1.1 = { revolt_risk = 5 } # General discontent against the Janissaries' dominance
+1556.1.1 = { revolt_risk = 0 marketplace = yes }
+1600.1.1 = { citysize = 18650 }
+1614.1.1 = { capital = "Tirana" } # Established by Sulejman Pasha
+1650.1.1 = { citysize = 15870 }
+1687.1.1 = { revolt_risk = 6 } # Christian counteroffensive against the Ottomans
+1690.1.1 = { revolt_risk = 0 }
+1700.1.1 = { citysize = 4000 }
+1750.1.1 = { citysize = 8900 }
+1788.1.1 = { fort2 = yes } # Ali Pasha made it a stronghold
+1797.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Suliot uprising
+1800.1.1 = { citysize = 11000 }
+1803.1.1 = { revolt = {} controller = TUR }
