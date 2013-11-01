@@ -127,7 +127,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_religion"
 		texturefile = "gfx//interface//icon_religion.tga"
-		noOfFrames = 14
+		noOfFrames = 16
 ###		loadType = "INGAME"
 		norefcount = yes
 	}
@@ -137,7 +137,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_religion_small"
 		texturefile = "gfx//interface//icon_religion_small.tga"
-		noOfFrames = 14
+		noOfFrames = 16
 		loadType = "INGAME"
 	}
 
