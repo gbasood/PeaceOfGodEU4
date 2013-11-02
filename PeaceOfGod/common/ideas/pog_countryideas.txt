@@ -1,0 +1,177 @@
+# Jerusalem
+KOJ_ideas = {
+	start = {
+		defensiveness = 0.25
+		global_missionary_strength = 0.02
+	}
+	
+	bonus = {
+		papal_influence = 3
+	}
+	
+	trigger = {
+		tag = KOJ
+	}
+	free = yes			# will be added at load.
+	
+	call_for_crusade = {
+		extra_manpower_at_religious_war = yes
+	}
+	
+	rest_in_heaven = {
+		discipline = 0.1
+	}
+	
+	templar_banking = {
+		interest = -1
+	}
+	
+	siege_veterans = {
+		leader_siege = 1
+	}
+	
+	constant_war = {
+		army_tradition_decay = -0.01
+	}
+	
+	merchant_collaboration = {
+		trade_efficiency = 0.1
+	}
+	
+	protectors_of_holy_sepulchre = {
+		tolerance_own = 3
+	}
+}
+
+ALX_ideas = {
+	start = {
+		global_missionary_strength = 0.01
+		mercenary_cost = -0.25
+	}
+	
+	bonus = {
+		legitimacy = 1
+	}
+	
+	trigger = {
+		tag = ALX
+	}
+	free = yes			# will be added at load.
+	
+	komnenos_connections = {
+		diplomatic_upkeep = 2
+	}
+	
+	legacy_of_alexander = {
+		leader_shock = 1
+	}
+	
+	mediterranian_focus = {
+		naval_forcelimit_modifier = 0.25
+	}
+	
+	red_sea_toll = {
+		global_trade_income_modifier = 0.1
+	}
+	
+	what_would_cleopatra_do = {
+		rebel_support_efficiency = 0.20
+	}
+	
+	restore_library_of_alexandria = {
+		technology_cost = -0.10
+	}
+	
+	rebuild_lighthouse_of_alexandria = {
+		trade_steering = 0.25
+	}
+}
+
+ARM_ideas = {
+	start = {
+		cavalry_cost = -0.2
+		defensiveness = 0.15
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.2
+	}
+	
+	trigger = {
+		tag = ARM
+	}
+	free = yes			# will be added at load.
+	
+	land_of_tears = {
+		war_exhaustion_cost = -0.15
+	}
+	
+	armenian_resilience = {
+		manpower_recovery_speed = 0.20
+	}
+	
+	tax_optimization = {
+		global_tax_modifier = 0.10
+	}
+	
+	restore_greater_armenia = {
+		core_creation = -0.15
+	}
+	
+	great_armenian_temples = {
+		global_missionary_strength = 0.02
+	}
+	
+	new_cataphracts = {
+		cavalry_power = 0.15
+	}
+	
+	god_protects_armenians = {
+		tolerance_own = 3
+	}
+	
+}
+
+
+TOU_ideas = {
+	start = {
+		rebel_support_efficiency = 0.33
+	}
+	
+	bonus = {
+		infantry_power = 0.1
+	}
+	
+	trigger = {
+		tag = TOU
+	}
+	free = yes			# will be added at load.
+	
+	war_for_survival = {
+		global_manpower_modifier = 0.2
+	}
+	
+	dedication_of_the_people = {
+		land_morale = 0.40
+	}
+	
+	egalitarian_innovativeness = {
+		idea_cost = -0.10
+	}
+	
+	reign_of_the_perfect  = {
+		tolerance_own = 4
+	}
+	
+	popular_appeal = {
+		global_missionary_strength = 0.03
+	}
+	
+	gender_equality = {
+		advisor_pool = 2
+	}
+	
+	we_would_die_for_our_beliefs = {
+		recover_army_morale_speed  = 0.05
+	}
+}
