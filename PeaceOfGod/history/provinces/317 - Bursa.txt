@@ -2,7 +2,7 @@
 
 owner = BYZ
 controller = BYZ
-culture = orthodox
+culture = greek
 religion = orthodox
 capital = "Bursa"
 trade_goods = cloth

@@ -3,7 +3,7 @@
 owner = KNI
 controller = KNI
 culture = greek
-religion = orthodox
+religion = catholic
 capital = "Nicosia"
 trade_goods = wine
 hre = no
