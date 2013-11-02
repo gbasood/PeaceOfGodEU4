@@ -2,7 +2,7 @@
 
 owner = BYZ
 controller = BYZ
-culture = turkish
+culture = greek
 religion = sunni
 capital = "Izmir"
 trade_goods = wine
