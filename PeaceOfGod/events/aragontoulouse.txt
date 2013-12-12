@@ -43,7 +43,10 @@ country_event = {
 
 	option = {
 		name = "pog_aratou_event_1_opt_2"
-		custom_tooltip = "Toulouse will hear our offer."
+		custom_tooltip = "Toulouse will hear our offer, and we will renounce our claim as a peace offering."
+		197 = {
+			remove_core = ARA
+		}
 		set_global_flag = tou_ara_alliance
 		ai_chance = {
 			factor = 30
