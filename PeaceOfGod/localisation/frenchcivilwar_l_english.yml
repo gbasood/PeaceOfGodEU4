@@ -1,0 +1,11 @@
+l_english:
+ pog_event_101_name: "Our Ambitions"
+ pog_event_101_desc: "The call for crusade against us has been ignored. Still, we have a decision to make: should we attempt to overthrow the French king, or will we stay at home and mind our own business?"
+ pog_event_101_opt_1: "Our demense needs attending to."
+ pog_event_101_opt_2: "France will be cleansed!"
+ pog_event_102_name: "Toulouse wants France!"
+ pog_event_102_desc: "Toulouse means to challenge the king of France for the throne! We could side with one of the two, or use the opportunity to seek our own independence."
+ pog_event_102_opt_1: "Stand with France"
+ pog_event_102_opt_2: "Stand with Toulouse"
+ pog_event_103_opt_3: "Independence!"
+ 

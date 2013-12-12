@@ -1,0 +1,101 @@
+#########################################
+# Toulouse: New King or survival first? #
+#########################################
+
+country_event = {
+	id = pog.101
+	name = "pog_event_101_name"
+	desc = "pog_event_101_desc"
+
+	trigger = {
+		tag = TOU
+		NOT = {
+			has_global_flag = french_civil_war
+			has_global_flag = no_french_civil_war
+		}
+	}
+
+	option = {
+		name = "pog_event_101_opt_1"
+		set_global_flag = no_french_civil_war
+		add_stability = 1
+		add_ruler_modifier = {
+			name = "domestic_improvements"
+			duration = -1
+		}
+		ai_chance = {
+			factor = 95
+		}
+	}
+
+	option = {
+		name = "pog_event_101_opt_2"
+		custom_tooltip = "France and her vassals will know of our ambitions."
+		add_prestige = 10
+		set_global_flag = french_civil_war
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+
+country_event = {
+	id = pog.102
+	name = "pog_event_102_name"
+	desc = "pog_event_102_desc"
+
+	trigger = {
+		vassal_of = FRA
+		NOT = {
+			has_country_modifier = fcw_sided_with_france
+			has_country_modifier = fcw_sided_with_toulouse
+			has_country_modifier = fcw_sided_with_self
+		}
+	}
+
+	option =  {
+		name = "pog_event_102_opt_1"
+		reverse_add_opinion = {
+			who = FRA
+			modifier = sided_with_during_civil_war
+		}
+
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 25
+				religion = catholic
+			}
+		}
+	}
+
+	option = {
+		name = "pog_event_102_opt_2"
+		TOU = {
+			vassalize = FROM
+		}
+		reverse_add_opinion = {
+			who = TOU
+			modifier = sided_with_during_civil_war
+		}
+
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 20
+				religion = cathar
+			}
+		}
+	}
+
+	option = {
+		name = "pog_event_102_opt_3"
+		FRA = {
+			free_vassal = FROM
+		}
+
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
