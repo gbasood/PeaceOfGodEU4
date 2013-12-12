@@ -1,0 +1,4 @@
+sided_with_during_civil_war = {
+	opinion = 50
+	yearly_decay = -1
+}
