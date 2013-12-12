@@ -1,0 +1,201 @@
+namespace = pog
+
+
+###########################
+# Aragon: Alliance or PU? #
+###########################
+country_event = {
+	id = pog.1
+	major = yes
+	fire_only_once = yes
+	title = "pog_aratou_event_1_title"
+	desc = "pog_aratou_event_2_desc"
+
+	trigger = {
+		year = 1400
+		tag = ARA
+		TOU = {
+			religion = cathar
+			exists = yes
+			is_subject = no
+			is_lesser_in_union = no
+		}
+		NOT = {
+			OR = {
+				has_global_flag = tou_ara_start
+				has_global_flag = tou_ara_conquest
+			}
+		}
+	}
+
+	option = {
+		name = "pog_aratou_event_1_opt_1"
+		set_country_flag = tou_ara_conquest
+		add_casus_belli = {
+			target = TOU
+			type = cb_restore_personal_union
+			months = 120
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+
+	option = {
+		name = "pog_aratou_event_1_opt_2"
+		custom_tooltip = "Toulouse will hear our offer."
+		set_global_flag = tou_ara_alliance
+		ai_chance = {
+			factor = 30
+		}
+	}
+
+	option = {
+		name = "pog_aratou_event_1_opt_3"
+		ai_chance = {
+			factor = 30
+		}
+	}
+
+}
+
+###############################
+# Toulouse considers alliance #
+###############################
+country_event = {
+	id = pog.2
+	major = yes
+	title = "pog_aratou_event_2_title"
+	desc = "pog_aratou_event_2_desc"
+
+	trigger = {
+		has_global_flag = tou_ara_alliance
+		tag = TOU
+		NOT = {
+			OR = {
+				has_global_flag = tou_ara_conquest
+				has_global_flag = tou_ara_allied
+				alliance_with = ARA
+			}
+		}
+	}
+
+	option = {
+		name = "pog_aratou_event_2_opt_1"
+		create_alliance = ARA
+		set_global_flag = tou_ara_allied
+		add_opinion = {
+			who = ARA
+			modifier = opinion_aratou_allied
+		}
+		reverse_add_opinion = {
+			who = ARA
+			modifier = opinion_aratou_allied
+		}
+		ai_chance = {
+			factor = 90
+		}
+	}
+
+	option = {
+		name = "pog_aratou_event_2_opt_2"
+		add_opinion = {
+			who = TOU
+			modifier = opinion_aratou_alliancerefused
+		}
+		ai_chance ={
+			factor = 10
+		}
+	}
+}
+
+
+###########################
+# Aragon considers heresy #
+###########################
+country_event = {
+	id = pog.3
+	major = yes
+	title = "pog_aratou_event_3_title"
+	desc = "pog_aratou_event_3_desc"
+
+	trigger = {
+		tag = ARA
+		TOU = {
+			religion = cathar
+			exists = yes
+		}
+		OR = {
+			has_global_flag = tou_ara_allied
+			alliance_with = TOU
+		}
+		NOT = {
+			has_country_flag = converted_to_cathar
+		}
+	}
+
+	option = {
+		name = "pog_aratou_event_3_opt_1"
+		add_papal_influence = 5
+		set_country_flag = prefers_catholicism
+		ai_chance = {
+			factor = 60
+		}
+	}
+
+	option = {
+		name = "pog_aratou_event_3_opt_2"
+		change_religion = cathar
+		add_stability = -2
+		capital_scope = {
+			change_religion = cathar
+		}
+		#Pirineo
+		211 = {
+			change_religion = cathar
+		}
+		ai_chance = {
+			factor = 40
+		}
+		set_country_flag = converted_to_cathar
+	}
+
+	mean_time_to_happen = {
+		months = 3
+
+		modifier = {
+			factor = 0.8
+			NOT = { stability = 2 }
+		}
+
+		modifier = {
+			factor = 0.8
+			NOT = { prestige = 70 }
+		}
+
+		modifier = {
+			factor = 0.8
+			NOT = { legitimacy = 70 }
+		}
+
+		modifier = {
+			factor = 3.0
+			has_country_flag = prefers_catholicism
+		}
+
+		modifier = {
+			factor = 1.5
+			papal_influence = 50
+		}
+
+		modifier = {
+			factor = 5.0
+			religious_unity = 1.0
+		}
+
+		modifier = {
+			factor = 1.2
+			legitimacy = 90
+		}
+	}
+}
