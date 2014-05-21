@@ -75,6 +75,20 @@ spriteTypes = {
 		loadType = "INGAME"
 		transparencecheck = yes
 	}
+	
+	spriteType = {
+		name = "GFX_native_building_divider"
+		texturefile = "gfx/interface/native_building_divider.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}	
+	
+	spriteType = {
+		name = "GFX_provinceview_native_building_bg"
+		texturefile = "gfx/interface/provinceview_native_building_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
 
 	spriteType = {
 		name = "GFX_provinceview_bg"
@@ -89,6 +103,20 @@ spriteTypes = {
 		loadType = "INGAME"
 		transparencecheck = yes
 	}
+	
+	spriteType = {
+		name = "GFX_provinceview_bg_large"
+		texturefile = "gfx/interface/provinceview_bg_large.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_provinceview_foreign_bg_large"
+		texturefile = "gfx/interface/provinceview_foreign_bg_large.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}	
 	
 	spriteType = {	
 		name = "GFX_move_capital"
@@ -167,6 +195,12 @@ spriteTypes = {
 		name = "GFX_hre_indicators"
 		texturefile = "gfx/interface/hre_indicators.dds"
 		noOfFrames = 4
+	}
+	
+	spriteType = {
+		name = "GFX_migrate_province"
+		texturefile = "gfx/interface/migrate_province_button.dds"
+		noOfFrames = 1
 	}
 	
 
@@ -339,9 +373,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_resource_icon"
 		texturefile = "gfx//interface//resources.tga"
-		noOfFrames = 21
+		noOfFrames = 22
 		loadType = "INGAME"
 		norefcount = yes
+	}
+	
+	spriteType = {
+		name = "GFX_resource_icon_transparent"
+		texturefile = "gfx//interface//resources.tga"
+		noOfFrames = 22
+		loadType = "INGAME"
+		norefcount = yes
+		allwaystransparent = yes
 	}
 
 	spriteType = {

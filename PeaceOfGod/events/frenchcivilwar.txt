@@ -6,8 +6,9 @@ namespace = pog
 
 country_event = {
 	id = pog.101
-	name = "pog_event_101_name"
+	title = "pog_event_101_name"
 	desc = "pog_event_101_desc"
+	major = yes
 
 	trigger = {
 		tag = TOU
@@ -43,8 +44,9 @@ country_event = {
 
 country_event = {
 	id = pog.102
-	name = "pog_event_102_name"
+	title = "pog_event_102_name"
 	desc = "pog_event_102_desc"
+	major = yes
 
 	trigger = {
 		vassal_of = FRA
@@ -86,6 +88,15 @@ country_event = {
 			modifier = {
 				factor = 20
 				religion = cathar
+			}
+			modifier = {
+				factor = 10
+				capital_scope = {
+					religion = cathar
+				}
+				NOT = {
+					religion = cathar
+				}
 			}
 		}
 	}

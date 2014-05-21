@@ -136,6 +136,7 @@ ARM_ideas = {
 TOU_ideas = {
 	start = {
 		rebel_support_efficiency = 0.33
+		land_morale = 0.40
 	}
 	
 	bonus = {

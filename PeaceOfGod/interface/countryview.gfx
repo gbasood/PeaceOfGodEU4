@@ -107,7 +107,31 @@ spriteTypes = {
 		noOfFrames = 2
 		loadType = "INGAME"
 	}
-
+	
+	spriteType = {
+		name = "GFX_tab_natives"
+		texturefile = "gfx//interface//tab_domestic_natives.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 2
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_tab_natives"
+		texturefile = "gfx//interface//tab_domestic_natives.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 2
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_tab_subjects"
+		texturefile = "gfx//interface//tab_domestic_subject.tga"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 2
+		loadType = "INGAME"
+	}	
+	
 	spriteType = {
 		name = "GFX_tab_policies"
 		texturefile = "gfx//interface//tab_domestic_policies.tga"
