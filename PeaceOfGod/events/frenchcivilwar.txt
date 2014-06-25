@@ -23,7 +23,7 @@ country_event = {
 		set_global_flag = no_french_civil_war
 		add_stability = 1
 		add_ruler_modifier = {
-			name = "domestic_improvements"
+			name = "toulouse_stays_home"
 			duration = -1
 		}
 		ai_chance = {
@@ -36,6 +36,13 @@ country_event = {
 		custom_tooltip = "France and her vassals will know of our ambitions."
 		add_prestige = 10
 		set_global_flag = french_civil_war
+		FRA = {
+			every_subject_country = {
+				country_event = {
+					id = pog.102
+				}
+			}
+		}
 		ai_chance = {
 			factor = 5
 		}
@@ -47,15 +54,7 @@ country_event = {
 	title = "pog_event_102_name"
 	desc = "pog_event_102_desc"
 	major = yes
-
-	trigger = {
-		vassal_of = FRA
-		NOT = {
-			has_country_modifier = fcw_sided_with_france
-			has_country_modifier = fcw_sided_with_toulouse
-			has_country_modifier = fcw_sided_with_self
-		}
-	}
+	is_triggered_only = yes
 
 	option =  {
 		name = "pog_event_102_opt_1"
@@ -76,7 +75,7 @@ country_event = {
 	option = {
 		name = "pog_event_102_opt_2"
 		TOU = {
-			vassalize = FROM
+			vassalize = ROOT
 		}
 		reverse_add_opinion = {
 			who = TOU
@@ -103,12 +102,90 @@ country_event = {
 
 	option = {
 		name = "pog_event_102_opt_3"
-		FRA = {
+		overlord = {
 			free_vassal = FROM
 		}
 
 		ai_chance = {
 			factor = 20
+		}
+	}
+}
+
+#######################################################################
+# Enforce PU for Toulouse against France in their claim to the throne.#
+#######################################################################
+
+country_event = {
+	id = pog.103
+	title = "pog_event_103_name"
+	desc = "pog_event_103_desc"
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TOU
+		has_global_flag = french_civil_war
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			num_of_vassals = 3
+		}
+		modifier = {
+			factor = 0.5
+			alliance_with = ARA
+		}
+	}
+	
+	option = {
+		name = "pog_event_103_opt_1"
+		add_casus_belli = {
+			target = FRA
+			type = cb_restore_personal_union
+			months = 60
+		}
+	}
+}
+
+#############################################################################
+# Enforce PU for France against Toulouse in their retaliation against them. #
+#############################################################################
+
+country_event = {
+	id = pog.104
+	title = "pog_event_104_name"
+	desc = "pog_event_104_desc"
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TOU
+		has_global_flag = french_civil_war
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 1.5
+			TOU = {
+				num_of_vassals = 2
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+	}
+	
+	option = {
+		name = "pog_event_104_opt_1"
+		add_casus_belli = {
+			target = TOU
+			type = cb_restore_personal_union
+			months = 60
 		}
 	}
 }

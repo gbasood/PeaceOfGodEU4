@@ -1,0 +1,5 @@
+toulouse_stays_home = {
+	stability_cost_modifier = -0.25
+	global_revolt_risk = -2
+	#icon = 1
+}

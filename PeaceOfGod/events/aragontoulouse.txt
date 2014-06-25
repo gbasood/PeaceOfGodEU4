@@ -129,7 +129,12 @@ country_event = {
 			exists = yes
 		}
 		OR = {
-			has_global_flag = tou_ara_allied
+			AND = {
+				has_global_flag = tou_ara_allied
+				NOT = {
+					year = 1500
+				}
+			}
 			alliance_with = TOU
 		}
 		NOT = {
@@ -150,6 +155,7 @@ country_event = {
 		name = "pog_aratou_event_3_opt_2"
 		change_religion = cathar
 		add_stability = -2
+		create_alliance = TOU
 		capital_scope = {
 			change_religion = cathar
 		}

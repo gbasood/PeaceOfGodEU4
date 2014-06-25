@@ -1,4 +1,5 @@
 l_english:
+ toulouse_stays_home: "Toulouse Stays Home"
  pog_event_101_name: "Our Ambitions"
  pog_event_101_desc: "The call for crusade against us has been ignored. Still, we have a decision to make: should we attempt to overthrow the French king, or will we stay at home and mind our own business?"
  pog_event_101_opt_1: "Our demense needs attending to."
@@ -7,5 +8,10 @@ l_english:
  pog_event_102_desc: "Toulouse means to challenge the king of France for the throne! We could side with one of the two, or use the opportunity to seek our own independence."
  pog_event_102_opt_1: "Stand with France"
  pog_event_102_opt_2: "Stand with Toulouse"
- pog_event_103_opt_3: "Independence!"
- 
+ pog_event_102_opt_3: "Independence!"
+ pog_event_103_name: "For France!"
+ pog_event_103_desc: "It's time to take the throne by force!"
+ pog_event_103_opt_1: "For Cathar!"
+ pog_event_104_name: "Insubordinate heretics!"
+ pog_event_104_desc: "Toulouse, those Cathar heretics in the south of France, have been stirring up trouble in our country, turning our vassals against us. They mean to take the throne from us. We will take theirs from them instead."
+ pog_event_104_opt_1: "For the True Faith!"

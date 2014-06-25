@@ -12,6 +12,7 @@ add_accepted_culture = occitain
 add_accepted_culture = cosmopolitan_french
 religion = cathar
 technology_group = western
+historical_friend = ARA
 capital = 196	# Toulouse
 
 1389.1.1 = {

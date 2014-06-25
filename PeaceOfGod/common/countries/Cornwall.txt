@@ -2,8 +2,7 @@
 
 graphical_culture = westerngfx
 
-#color = { 155  56  0 }
-color = { 255  87  127 } # Old pink colour
+color = { 155  56  0 }
 
 historical_idea_groups = {
 	naval_ideas

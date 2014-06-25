@@ -38,7 +38,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_province_view_religion"
 		texturefile = "gfx//interface//province_view_religion.tga"
-		noOfFrames = 16
+		noOfFrames = 20
 		loadType = "INGAME"
 		allwaystransparent = yes
 	}
@@ -130,6 +130,20 @@ spriteTypes = {
 		texturefile = "gfx//interface//current_capital.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		loadType = "INGAME"
+	}
+
+	spriteType = {	
+		name = "GFX_move_trade_port"
+		texturefile = "gfx//interface//move_trade_port.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {	
+		name = "GFX_have_trade_port"
+		texturefile = "gfx//interface//have_trade_port.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
 	}	
 	
 	spriteType = {
@@ -194,6 +208,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_hre_indicators"
 		texturefile = "gfx/interface/hre_indicators.dds"
+		noOfFrames = 4
+	}
+	
+	spriteType = {
+		name = "GFX_tradecompany_indicators"
+		texturefile = "gfx/interface/tradecompany_indicators.dds"
 		noOfFrames = 4
 	}
 	
@@ -363,6 +383,33 @@ spriteTypes = {
 		size = { x = 46 y = 5 }
 		effectFile = "gfx//FX//progress.lua"
 	}
+	
+	spriteType = {
+		name = "GFX_integrate_icon"
+		texturefile = "gfx//interface//icon_diplomacy_leadunions.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_annex_icon"
+		texturefile = "gfx//interface//icon_diplomacy_leadvassal.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_integrate_annex_progress_frame"
+		#texturefile = "gfx//interface//modifier_progress_frame.dds"
+		texturefile = "gfx//interface//provinceView_morale_frame_long.dds"
+	}
+	
+	progressbartype = {
+		name = "GFX_integrate_annex_progress"
+		color = { 1.0 0.0 0.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx\\interface\\provinceView_progressbar_w92_h11_green.dds"
+		textureFile2 = "gfx\\interface\\provinceView_progressbar_w92_h11_red.dds"
+		size = { x = 90 y = 10 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	
 	spriteType = {
 		name = "GFX_building_category_strip"
 		texturefile = "gfx//interface//building_category_strip.tga"
@@ -416,7 +463,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_natives"
 		texturefile = "gfx//interface//natives.tga"
-		noOfFrames = 4
+		noOfFrames = 6
 		loadType = "INGAME"
 		norefcount = yes
 	}

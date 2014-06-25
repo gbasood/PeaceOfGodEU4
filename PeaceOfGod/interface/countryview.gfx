@@ -56,7 +56,7 @@ spriteTypes = {
 		loadType = "INGAME"
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
-		transparencecheck = yes
+		transparencecheck = no
 		#allwaystransparent = yes
 	}
 	
@@ -151,7 +151,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_religion"
 		texturefile = "gfx//interface//icon_religion.tga"
-		noOfFrames = 16
+		noOfFrames = 20
 ###		loadType = "INGAME"
 		norefcount = yes
 	}
@@ -161,7 +161,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_religion_small"
 		texturefile = "gfx//interface//icon_religion_small.tga"
-		noOfFrames = 16
+		noOfFrames = 20
 		loadType = "INGAME"
 	}
 
