@@ -7,6 +7,10 @@ NGame = {
 },
 
 NDiplomacy = {
+	PEACE_IMPACT_ADM_SCORE = 0.1,
+	PEACE_IMPACT_DIP_SCORE = 0.1,
+	PEACE_IMPACT_MIL_SCORE = 0.1,
+
 	RIVAL_PRESTIGE_BONUS = 0.25,
 	RIVAL_SPY_OFFENCE = 0.20,
 	OVEREXTENSION_THRESHOLD = 1.0,				-- at which threshold you can get events
@@ -26,11 +30,12 @@ NDiplomacy = {
 	WE_IMPACT_ON_ANNEX_INTEGRATE = -0.05,			-- multiplied with current WE
 	EMPEROR_VOTE_DAYS = 60,	 						-- _DDEF_EMPEROR_VOTE_DAYS_; "Cooldown" until Electors can change their vote again.
 	TRUCE_YEARS = 5, 								-- _DDEF_TRUCE_YEARS_; Years of Truce
+	SCALED_TRUCE_YEARS = 10,						-- Additional years of truce based on % of warscore taken in war (100% warscore = full scaled truce years)
 	WARNING_YEARS = 20,								-- Years before warning expire
-	ANNUL_TREATIES_YEARS = 5,						-- Years before annul treaties expire
+	ANNUL_TREATIES_YEARS = 10,						-- Years before annul treaties expire
 	COALITION_YEARS = 20,							-- Years before coalition expire
 	GUARANTEE_YEARS = 20,							-- Years before guarantee expire
-	MONARCH_GOV_CHANGE_LEGITIMACY_PENALTY = 0.5,	-- Penalty on the legitimacy when changing gov type to the monarchy
+	MONARCH_GOV_CHANGE_LEGITIMACY_PENALTY = 0.0,	-- Penalty(%) on the legitimacy when changing gov type to the monarchy
 	BASE_SPY_DISCOVERY_CHANCE = 0.25,
 	PRESTIGE_PENALTY_ON_DISCOVER_INFILTRATE = -15,		-- Penalty to prestige if your agent gets discovered while infiltrating administration
 	JUSTIFY_TRADE_CONFLICT_LIMIT = 0.2,			-- How big share of the trade power needed on the target to be able to justify a trade conflict
@@ -133,14 +138,19 @@ NDiplomacy = {
 	CORE_PEACE_COST_DIP_FRACTION = -0.2,			-- Fraction of dipcost you pay for cores
 	CANCEL_TRADE_TRANSFER_PRESTIGE_HIT = -5,
 	
-	DIPLOMAT_SPEED = 10.0,							-- DIPLOMAT_SPEED
+	DIPLOMAT_SPEED = 20.0,							-- DIPLOMAT_SPEED
 	DIPLOMAT_COOLDOWN_TIME = 1,						-- DIPLOMATIC ACTION COOLDOWN IN MONTHS
 	MIN_RELATIONS_TO_ALLY = 0,						-- Alliances not possible if either country has an opinion of the other lower than this
+	MIN_RELATIONS_TO_SUPPORT_INDEPENDENCE = -25,	-- Support Independence not possible if either country has an opinion of the other lower than this
+	LACK_OF_RIVAL_SCORE_PENALTY = 0.25,			-- Monthly score is changed by this for each rival short of expected amount
 	
-	PP_EMBARGO_TRADE_VALUE_DIV = 2,					-- Must have at least this much shared node value for embargo on rival to give full power projection
+	ELECTIVE_VICTORY_PRESTIGE = 25,				-- Prestige for getting a heir from your country onto the throne of an elective nation
+	ELECTIVE_VICTORY_LEGITIMACY = 10,				-- Legitimacy for getting a heir from your country onto the throne of an elective nation
 },
 
 NCountry = {
+	SUPPORT_OWN_HEIR_LEGITIMACY_COST = 5,
+	SUPPORT_OWN_HEIR_SUPPORT_BONUS = 5,
 	MAX_ACTIVE_POLICIES = 5,						-- how many active policies at once.
 	MINIMUM_POLICY_TIME = 10,						-- how many years minimum for a policy
 	POLICY_COST = 1,								-- Monthly cost per policy
@@ -149,6 +159,7 @@ NCountry = {
 	COUNTRIES_GETTING_SCORE = 10,
 	WESTERNISATION_THRESHOLD = 7,					-- techs behind to be allowed to westernize.
 	WESTERN_POWER_TICK = 10,					-- max power to transfer every month.
+	WESTERN_POWER_TICK_MIN = 1,				-- min power to transfer every month.
 	WESTERN_NEEDED_BASE_POWER = 2000,					-- needed for full westernisation
 	WESTERN_NEEDED_MAX_POWER = 5000,					-- needed for full westernisation
 	WESTERN_POWER_TICK_REDUCTION_FACTOR = 15,		-- reduce max power transfer by 1 for each multiplication of this in total monthly income.
@@ -171,9 +182,14 @@ NCountry = {
 	HEIR_DEATH = 1, 								-- _CDEF_HEIR_DEATH_	(Only applies for heirs older than 20, and the chance increases with age.)
 	LEGITIMACY_DYNASTY_CHANGE = 20,					-- Legitimacy a new dynasty starts out with
 	BASE_POWER_INCREASE = 3,						-- monthly base increase
+	NAT_FOCUS_DECREASE = -1,							-- power taken away from non national focus power
+	NAT_FOCUS_INCREASE = 2,							-- extra power given to national focus power
+	NAT_FOCUS_YEARS = 25,							-- years before you can change focus again
 	POWER_MAX = 999,								-- how much power can be stored at maximum.
 	DISMANTLE_HRE_PRESTIGE = 100,					-- Prestige gain on dismantling HRE
 	FREE_IDEA_GROUP_COST  = 3,						-- modifier on cheapness of "free" idea group
+	MAX_TOLERANCE_HERETIC = 3, 						-- maximum tolerance towards heretics
+	MAX_TOLERANCE_HEATHEN = 3, 						-- maximum tolerance towards heathens
 	
 	IDEA_TO_TECH = -0.02,			-- percentage on tech reduction per idea.
 	TECH_TIME_COST = 0.3,			-- tech grow with 20% cost over time.
@@ -208,6 +224,7 @@ NCountry = {
 	PS_RAISE_TARIFFS = 25,
 	PS_LOWER_TARIFFS = 75,
 	PS_RAISE_WAR_TAXES = 50,
+	PS_CREATE_TRADE_POST = 50,
 	
 	CORE_SAME_CULTURE_OVERSEAS = 0.1,				-- Multiplied with base tax, overseas province or colonized by country
 	CORE_SAME_REGION = 0.25,						-- Multiplied with base tax, for colonial nations 
@@ -231,8 +248,8 @@ NCountry = {
 	CORE_LOSE_CULTURE_GROUP = 150,					-- how many years until a core in a country's culture group is lost.
 	CORE_LOSE_PRIMARY_CULTURE_TAG = -1,				-- how many years until a core is lost for the primary tag of a country (-1 = never lost)
 	CORE_LOSE_PRESTIGE = -10.0,						-- Prestige change when lost core
-	NEIGHBOURBONUS = -0.02, 						-- _CDEF_NEIGHBOURBONUS_
-	NEIGHBOURBONUS_CAP = -0.20, 					-- _CDEF_NEIGHBOURBONUS_CAP_
+	NEIGHBOURBONUS = -0.05, 						-- _CDEF_NEIGHBOURBONUS_
+	NEIGHBOURBONUS_CAP = -0.75, 					-- _CDEF_NEIGHBOURBONUS_CAP_
 	POPULATION_GROWTH = 0.03, 						-- _CDEF_POPULATION_GROWTH_; Base population growth.
 	COLONIAL_GROWTH_PENALTY = 100, 					-- growth penalty for low colonial maintenance
 	YEARS_OF_NATIONALISM = 30, 						-- _CDEF_YEARS_OF_NATIONALISM_; Years of Nationalism
@@ -249,7 +266,7 @@ NCountry = {
 	CORE_TIME_SIZE_MODIFIER = 0.04,					-- % longer per province owned.
 	MONTHS_TO_CORE_MAXIMUM = 240,
 	MONTHS_TO_CORE = 36,							-- How many months it will take to core a province.
-	MONTHS_TO_CHANGE_CULTURE = 12,					-- How many months it will take to change culture in a province, per basetax.
+	MONTHS_TO_CHANGE_CULTURE = 24,					-- How many months it will take to change culture in a province, per basetax.
 	STARTING_FLEET_SIZE = 0.9, 						-- Starting fleet (as percentage of forcelimits)
 	GALLEY_INLAND_SEA_COAST_RATIO = 0.75, 			-- % of ports that need to be inland seas for galleys to be considered important
 	REBEL_BREAK_STABILITY_SET = 0,					-- Stability will be set to this value when rebels break country.
@@ -282,6 +299,10 @@ NCountry = {
 	PROTECTORATE_TECH_THRESHOLD = 0.5,				-- Difference in tech group cost modifiers
 	PROTECTORATE_LOWER_BOUND = 0.5,					-- Lower limit for protectorates
 	OVERSEAS_DISTANCE = 150,							-- Provinces beyond this distance to capital are distant overseas
+	
+	NORMAL_ELECTION_CYCLE = 4,						-- The normal election cycle at which 10 republican tradition is lost from 1 unit of scaled republican tradition
+	DICTATORSHIP_TRADITION_FOR_MONARCHY = 0.5,		-- If republican tradition is lower than this on death of ruler, dictatorship turns into monarchy
+	DICTATORSHIP_TRADITION_FOR_REPUBLIC = 0.5,		-- If republican tradition is this or higher on death of ruler, dictatorship turns into republic
 },
 
 NEconomy = {
@@ -291,7 +312,7 @@ NEconomy = {
 	GOLD_INFLATION = 0.5,							-- _EDEF_GOLD_INFLATION_
 	BASE_YEARLY_INFLATION = 0,					-- yearly inflation increase
 	INFLATION_FROM_LOAN = 0.1,						-- increase per loan
-	INFLATION_FROM_PEACE_GOLD = 0.02,				-- inflation per month of income taken in peace
+	INFLATION_FROM_PEACE_GOLD = 0.02,				-- inflation per month of income taken in peace (also applied to province sales)
 	INFLATION_ACTION_REDUCTION = 2,					-- amount per action
 	BANKRUPTCY_DURATION = 10,						-- _EDEF_BANKRUPTCY_DURATION_
 	WARTAXES_DURATION = 2,							-- _EDEF_WARTAXES_DURATION_
@@ -319,7 +340,7 @@ NEconomy = {
 	OPEN_SEA_MODIFIER = 1.7,						-- _EDEF_OPEN_SEA_MODIFIER_
 	COASTAL_MODIFIER = 1.0,							-- _EDEF_COASTAL_MODIFIER_
 	TRADE_CAPITAL_POWER = 5.0,						-- TRADE_CAPITAL_POWER
-	MERCHANT_SPEED = 10.0,							-- MERCHANT_SPEED
+	MERCHANT_SPEED = 20.0,							-- MERCHANT_SPEED
 	MERCHANT_MAX_POWER_BONUS = 2.0,					-- MERCHANT_MAX_POWER_BONUS
 	TRADE_SHIP_MAX_DAYS_IN_PORT = 5.0,				-- TRADE_SHIP_MAX_DAYS_IN_PORT
 	TRADE_SHIP_ORG_LIMIT = 0.5,						-- TRADE_SHIP_ORG_LIMIT
@@ -340,6 +361,7 @@ NEconomy = {
 },
 
 NMilitary = {
+	TECH_IMPACT_ON_MANPOWER = 0.05,
 	SIEGE_ATTRITION = 1,
 	NATIVE_FEROCITY_IMPACT = 0.05,					-- how many percentage each ferocity gives in combat bonus
 	GALLEY_BONUS_INLAND_SEA = 1.0,
@@ -443,7 +465,7 @@ NAI = {
 	FORCE_COMPOSITION_CHANGE_TECH_LEVEL = 11, -- Tech level at which AI will double its artillery fraction
 	TRANSPORT_FRACTION = 0.3, -- Max fraction of naval forcelimit that should be transports
 	INCOME_SAVINGS_FRACTION = 0.25, -- AI will reserve this amount of their surplus for long-term savings
-	OVER_FORCELIMIT_AVOIDANCE_FACTOR = 5, -- The higher this number is, the less willing the AI will be to exceed forcelimits
+	OVER_FORCELIMIT_AVOIDANCE_FACTOR = 10, -- The higher this number is, the less willing the AI will be to exceed forcelimits
 	DESIRED_SURPLUS = 0.1, -- AI will aim for having at least this fraction of their income as surplus when they don't have large savings
 	MAX_SAVINGS = 20, -- AI will keep a maximum of this * their monthly income in long-term savings
 	ADVISOR_BUDGET_FRACTION = 0.3, -- AI will spend a maximum of this fraction of monthly income on advisor maintenance
@@ -574,7 +596,8 @@ NAI = {
 	DIPLOMATIC_ACTION_ROYAL_MARRIAGE_NO_POWER_COST_RELATION_MULT = 0.25, -- AI scoring for royal marriage is multiplied by this if they currently lack a relation with a power cost
 	DIPLOMATIC_ACTION_IMPROVE_RELATIONS_BEFRIEND_FACTOR = 50, -- AI scoring for improve relations is increased by this if they have an attitude with 'befriend' desire
 	DIPLOMATIC_ACTION_IMPROVE_RELATIONS_ALLY_FACTOR = 50, -- AI scoring for improve relations is increased by this if they have an attitude with 'ally' desire
-	DIPLOMATIC_ACTION_IMPROVE_RELATIONS_VASSALIZE_FACTOR = 100, -- AI scoring for improve relations is increased by this if they have an attitude with 'vassalize' desire (also applied to royal marriage desire)
+	DIPLOMATIC_ACTION_IMPROVE_RELATIONS_VASSALIZE_FACTOR = 150, -- AI scoring for improve relations is increased by this if they have an attitude with 'vassalize' desire (also applied to royal marriage desire)
+	DIPLOMATIC_ACTION_IMPROVE_RELATIONS_SUPPORTING_HEIR_FACTOR = 50, -- AI scoring for improve relations is increased by this if they are also supporting a heir in the country
 	DIPLOMATIC_ACTION_GRANT_ELECTORATE_PROVINCE_PENALTY_THRESHOLD = 4, -- AI scoring for grant electorate is reduced if target has at least this many provinces
 	DIPLOMATIC_ACTION_GRANT_ELECTORATE_PROVINCE_PENALTY_MULT = 0.5, -- AI scoring for grant electorate is multiplied by this for each province above threshold
 	DIPLOMATIC_ACTION_EMBARGO_TRADE_INTEREST_FACTOR = 25, -- AI scoring for embargo is increased by this if they have trade interest
@@ -645,6 +668,8 @@ NAI = {
 	DIPLOMATIC_ACTION_TRADE_POWER_THRESHOLD = 1.0, -- AI will not ask to transfer trade power unless value of shared nodes is at least this high
 	DIPLOMATIC_ACTION_TRADE_POWER_FACTOR = 25.0, -- AI scoring for transfer trade power is increased by this for each 1.0 value in shared nodes
 	DIPLOMATIC_ACTION_TRADE_POWER_ALLIANCE_FACTOR = 0.25, -- AI threshold for transfer trade power will be mulitplied by this if the two countries have an alliance
+	DIPLOMATIC_ACTION_SUPPORT_HEIR_BASE_TAX_FACTOR = 5, -- AI scoring for support heir is increased by this for each base tax in target's provinces
+	DIPLOMATIC_ACTION_SUPPORT_HEIR_ALLIANCE_FACTOR = 2, -- AI scoring for support heir is multiplied by this if the two countries have an alliance
 },
 
 NGraphics = {
@@ -723,7 +748,10 @@ NGraphics = {
 	MINIMAP_WATER_COLOR_R 			= 38,
 	MINIMAP_WATER_COLOR_G 			= 124,
 	MINIMAP_WATER_COLOR_B 			= 200,
-	MINIMAP_WATER_COLOR_BASE_LERP 	= 0.3,		
+	MINIMAP_WATER_COLOR_BASE_LERP 	= 0.3,
+	
+	MAX_TRADE_NODE_FLAGS_SHOWN = -1,				-- -1 is unlimited
+	SHOW_TRADE_MODIFIERS_IN_TRADE_MAP_MODE = 1,		-- 1 = true, 0 = false
 },
 
 NEngine = {
