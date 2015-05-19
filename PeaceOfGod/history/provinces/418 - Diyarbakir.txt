@@ -2,7 +2,7 @@
 
 owner = ARM
 controller = ARM
-culture = azerbadjani
+culture = azerbaijani
 religion = orthodox
 capital = "Diyarbekir"
 trade_goods = wool
