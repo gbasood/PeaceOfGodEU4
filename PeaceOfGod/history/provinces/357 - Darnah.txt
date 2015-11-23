@@ -2,15 +2,15 @@
 
 owner = ALX
 controller = ALX
-culture = tuareg
+culture = al_misr_arabic
 religion = orthodox
-capital = "Darnah"
+capital = "Derna"
 trade_goods = wool
 hre = no
-base_tax = 1
-manpower = 2
-citysize = 1900
-fort1 = yes
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
 add_core = MAM
 add_core = ALX
 discovered_by = western
@@ -19,15 +19,8 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 
-1450.1.1 = { citysize = 2400 }
-1500.1.1 = { citysize = 2567 }
-1517.1.1 = {	owner = TUR
-		controller = TUR
-		add_core = TUR
-	   } # Conquered by Ottoman troops
-1550.1.1 = { citysize = 2780 }
-1600.1.1 = { citysize = 3278 }
-1650.1.1 = { citysize = 3878 marketplace = yes }
-1700.1.1 = { citysize = 4578 }
-1750.1.1 = { citysize = 5178 }
-1800.1.1 = { citysize = 5678 }
+1517.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+} # Conquered by Ottoman troops

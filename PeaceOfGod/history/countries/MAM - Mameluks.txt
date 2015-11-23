@@ -1,12 +1,4 @@
 government = iqta
-#aristocracy_plutocracy = -2
-#centralization_decentralization = 3
-#innovative_narrowminded = 2
-mercantilism = 0.1
-#offensive_defensive = 0
-#land_naval = -1
-#quality_quantity = 3
-#serfdom_freesubjects = -2
 primary_culture = al_misr_arabic
 religion = sunni
 technology_group = muslim

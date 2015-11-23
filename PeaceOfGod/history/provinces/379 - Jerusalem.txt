@@ -7,11 +7,10 @@ religion = catholic
 capital = "Jerusalem"
 trade_goods = grain
 hre = no
-base_tax = 5
-manpower = 3
-citysize = 4880
-fort1 = yes
-temple = yes
+base_tax = 5 
+base_production = 5
+base_manpower = 3
+is_city = yes
 add_core = KOJ
 add_core = MAM
 discovered_by = muslim
@@ -25,20 +24,15 @@ discovered_by = ADA
 discovered_by = NUB
 discovered_by = ZAN
 discovered_by = ZIM
+discovered_by = AJU
+discovered_by = MBA
+discovered_by = MDI
+discovered_by = MLI
+discovered_by = SFA
 
-1450.1.1 = { citysize = 5100 }
-1500.1.1 = { citysize = 5500 }
-1517.1.1 = {	owner = TUR
-		controller = TUR
-		add_core = TUR
-		fort2 = yes
-	   } # Part of the Ottoman empire
-1550.1.1 = { citysize = 6342 }
-1600.1.1 = { citysize = 8642 }
-1650.1.1 = { citysize = 10431 }
-1700.1.1 = { citysize = 12999 }
-1750.1.1 = {	citysize = 14383
-		tax_assessor = yes
-	   	add_core = SYR
-	   }
-1800.1.1 = { citysize = 17420 }
+1517.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+} # Part of the Ottoman empire
+1750.1.1 = { add_core = SYR }

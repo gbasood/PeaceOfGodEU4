@@ -2,51 +2,43 @@
 
 owner = GEO
 controller = GEO
-culture = azerbaijani
+culture = dagestani
 religion = orthodox
 capital = "Derbent"
-trade_goods = wool
+trade_goods = fish
 hre = no
-base_tax = 3
-manpower = 3
-citysize = 2550
+base_tax = 3 
+base_production = 3
+base_manpower = 1
+is_city = yes
 add_core = GEO
 add_core = QAR
-fort1 = yes
+add_core = SRV
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 
-1450.1.1   = { citysize = 2900 }
-1458.9.1   = { revolt = { type = pretender_rebels size = 0 name = "Hasan Ali's Faction" leader = "Hasan Ali" } controller = REB } # Civil war in Qara Quyunlu
-1458.12.1  = { revolt = {} controller = QAR }
-1468.1.1   = {	owner = AKK
-		controller = AKK
-		add_core = AKK
-		remove_core = QAR
-	     } # The Ak Koyunlu expands their territory
-1500.1.1   = { citysize = 3280 }
-1501.7.1   = {	owner = PER
-		controller = PER
-		add_core = PER
-		remove_core = AKK
-	     } # Ismail conquers Tabriz and defeats Alwand
-1550.1.1   = { citysize = 3700 }
-1578.9.9   = { controller = TUR }
-1590.3.21  = { owner = TUR add_core = TUR } # Peace of Istanbul
-1600.1.1   = { citysize = 4157 }
-1607.1.1   = { controller = PER } # Persian reconquest
-1612.11.20 = { owner = PER remove_core = TUR } # Part of Persia
-1650.1.1   = { citysize = 4643 }
-1700.1.1   = { citysize = 5171 }
-1747.1.1   = { revolt_risk = 3 } # Shah Nadir is killed, local khanates emerged
-1748.1.1   = { revolt_risk = 4 } # The empire began to decline
-1750.1.1   = { citysize = 5868 }
-1779.1.1   = { revolt_risk = 0 } # With the Qajar dynasty the situation stabilized
-1800.1.1   = { citysize = 6502 }
-1803.1.1   = {	owner = RUS
-		controller = RUS
-		add_core = RUS
-		remove_core = PER
-	     } # Incorporated into Russia
+1501.7.1 = {
+	owner = PER
+	controller = PER
+	add_core = PER
+	remove_core = SRV # was AKK
+} # Ismail conquers Tabriz and defeats Alwand
+1578.9.9 = { controller = TUR } 
+1590.3.21 = { controller = GAZ owner = GAZ add_core = GAZ } # Peace of Istanbul
+1725.1.1 = {
+	owner = GAZ
+	controller = GAZ
+	add_core = GAZ
+	remove_core = PER
+	revolt = { }
+} # Shirvan Khanate given to the Shamkhals by Persia
+1747.1.1 = { revolt_risk = 3 } # Shah Nadir is killed, local khanates emerged
+1748.1.1 = { revolt_risk = 4 } # The empire began to decline
+1779.1.1 = { revolt_risk = 0 } # With the Qajar dynasty the situation stabilized
+1803.1.1 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+} # Incorporated into Russia

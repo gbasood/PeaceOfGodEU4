@@ -3,43 +3,41 @@
 owner = LIV
 controller = LIV
 add_core = LIV
+add_core = EST
 culture = estonian
 religion = catholic
 hre = no
-base_tax = 1
+base_tax = 1 
+base_production = 1
 trade_goods = grain
-manpower = 1
+base_manpower = 1
 capital = "Arensburg"
-citysize = 1000 # Estimated
-fort1 = yes
+is_city = yes
 discovered_by = western
 discovered_by = eastern
 
 1399.10.14 = { owner = TEU controller = TEU add_core = TEU remove_core = LIV }
 1444.11.11 = { owner = LIV controller = LIV add_core = LIV remove_core = TEU }
-1450.1.1   = { citysize = 1100 }
-1500.1.1   = { citysize = 1250 }
-1542.1.1   = { religion = protestant} # Unknown date
-1550.1.1   = { citysize = 1600 }
-1559.1.1   = {	owner = DAN
-		controller = DAN
-		add_core = DAN
-		remove_core = LIV
-		} # Danish purchase
-1568.7.25  = { controller = SWE } # Nordic Seven-year War
+1542.1.1 = { religion = protestant} # Unknown date
+1559.1.1 = {
+	owner = DAN
+	controller = DAN
+	add_core = DAN
+	remove_core = LIV
+} # Danish purchase
+1568.7.25 = { controller = SWE } # Nordic Seven-year War
 1570.12.13 = { controller = DAN } # The Peace of Stettin
-1600.1.1   = { citysize = 1880 }
-1645.8.13  = {	owner = SWE
-		controller = SWE
-		add_core = SWE
-		remove_core = DAN
-		} # The Peace of Brömsebro
-1650.1.1   = { citysize = 1960 }
-1700.1.1   = { citysize = 2240 }
-1710.9.20  = { controller = RUS } # Estimated date
-1721.8.30  = {	owner = RUS
-		add_core = RUS 
-		remove_core = SWE
-		} # The Peace of Nystad
-1750.1.1   = { citysize = 2500 }
-1800.1.1   = { citysize = 2870 }
+1645.8.13 = {
+	owner = SWE
+	controller = SWE
+	add_core = SWE
+	remove_core = DAN
+} # The Peace of Brömsebro
+1710.9.20 = { controller = RUS }
+1721.8.30 = {
+	owner = RUS
+	add_core = RUS 
+	remove_core = SWE
+} # The Peace of Nystad
+
+

@@ -12,7 +12,7 @@ country_event = {
 	desc = "pog_aratou_event_2_desc"
 
 	trigger = {
-		year = 1400
+		is_year = 1400
 		tag = ARA
 		TOU = {
 			religion = cathar
@@ -79,6 +79,7 @@ country_event = {
 				has_global_flag = tou_ara_conquest
 				has_global_flag = tou_ara_allied
 				alliance_with = ARA
+				marriage_with = ARA
 			}
 		}
 	}
@@ -132,7 +133,7 @@ country_event = {
 			AND = {
 				has_global_flag = tou_ara_allied
 				NOT = {
-					year = 1500
+					is_year = 1500
 				}
 			}
 			alliance_with = TOU

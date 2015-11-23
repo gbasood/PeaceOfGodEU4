@@ -10,7 +10,7 @@ l_english:
  pog_aratou_event_2_desc: "[ARA.Monarch.GetTitle] [ARA.Monarch.GetName] has offered us an alliance. Few are in such a position to help us in our cause as Aragon, and with their help, we could defend ourselves from Catholics who would seek to destroy us."
  pog_aratou_event_2_opt_1: "Of course we'll accept!"
  pog_aratou_event_2_opt_2: "Toulouse stands alone."
- pog_aratou_event_3_name: "The Heresy and the King"
+ pog_aratou_event_3_title: "The Heresy and the King"
  pog_aratou_event_3_desc: "Many in court believe $MONARCH$ has been studying the Cathars to our north, and last Sunday he didn't show up to mass!"
  pog_aratou_event_3_opt_1: "He simply stayed home."
  pog_aratou_event_3_opt_2: "It's true, he's a Cathar now!"

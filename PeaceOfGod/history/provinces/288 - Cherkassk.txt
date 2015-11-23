@@ -2,16 +2,17 @@
 
 owner = CRI
 controller = CRI
-culture = tartar
+culture = mishary
 religion = sunni
 hre = no
-base_tax = 4
+base_tax = 3
+base_production = 3
 trade_goods = grain
-manpower = 5
+base_manpower = 2
 capital = "Cherkassk"
-citysize = 4100
-fort1 = yes
+is_city = yes
 add_core = CRI
+add_core = GOL
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
@@ -20,14 +21,10 @@ discovered_by = nomad_group
 
 1399.10.14 = { owner = GOL controller = GOL add_core = GOL } # remove_core = LIV }
 1444.11.11 = { owner = CRI controller = CRI add_core = CRI } # remove_core = LIV }
-1450.1.1 = { citysize = 4840 }
-1500.1.1 = { citysize = 5695 }
-1550.1.1 = { citysize = 6700 }
-1570.1.1 = { owner = ZAZ controller = ZAZ add_core = ZAZ remove_core = CRI culture = ruthenian religion = orthodox fort2 = yes } # Don Cossacks settle in the area, build fortified capital
-1600.1.1 = { citysize = 7882 }
-1650.1.1 = { citysize = 9273 }
-1700.1.1 = { citysize = 10910 }
-1708.12.29 = { owner = RUS controller = RUS add_core = RUS remove_core = ZAZ } # Azov Governorate
-1750.1.1 = { citysize = 12835 }
-1795.1.1 = { weapons = yes } # Ammunitions factory founded
-1800.1.1 = { citysize = 15100 }
+1502.6.1 = { owner = AST controller = AST add_core = AST remove_core = GOL } # Golden Horde destroyed by Crimea
+1556.6.2 = { owner = RUS controller = RUS add_core = RUS remove_core = AST } # Russians acquire Volga after fall of Astrakhan
+1570.1.1 = { culture = russian religion = orthodox }
+1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 } # Razin rebellion
+1671.4.14 = { revolt = { } controller = RUS unrest = 0 } # Razin captured
+1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+1775.2.1 = { revolt = {} controller = RUS unrest = 0 } # Pugachev is captured

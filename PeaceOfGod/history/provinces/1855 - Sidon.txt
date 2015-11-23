@@ -7,11 +7,12 @@ religion = catholic
 capital = "Sidon"
 trade_goods = naval_supplies
 hre = no
-base_tax = 5
-manpower = 2
-citysize = 20100
-fort1 = yes
+base_tax = 5 
+base_production = 5
+base_manpower = 3
+is_city = yes
 add_core = KOJ
+add_core = LEB
 add_core = SYR
 add_core = MAM
 discovered_by = muslim
@@ -21,17 +22,8 @@ discovered_by = western
 discovered_by = nomad_group
 discovered_by = indian
 
-1450.1.1 = { citysize = 22170 }
-1500.1.1 = { citysize = 25440 fort2 = yes }
-1516.8.24 = {	owner = TUR
-		controller = TUR
-		add_core = TUR
-	   } # Part of the Ottoman Empire
-1550.1.1 = { citysize = 31989 }
-1600.1.1 = { citysize = 35211 }
-1650.1.1 = { citysize = 38570 }
-1700.1.1 = { citysize = 41200 }
-1750.1.1 = {	citysize = 59600
-		tax_assessor = yes
-	   }
-1800.1.1 = { citysize = 72100 }
+1516.8.24 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+} # Part of the Ottoman Empire

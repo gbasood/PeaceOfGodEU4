@@ -2,34 +2,26 @@
 
 owner = KAZ
 controller = KAZ
-culture = tartar
+culture = kazani
 religion = sunni
 hre = no
-base_tax = 7
-trade_goods = wool   
-manpower = 5
+base_tax = 3 
+base_production = 3
+trade_goods = wool  
+base_manpower = 1
 capital = "Atemar"
-citysize = 5200
+is_city = yes
 add_core = KAZ
 discovered_by = western
 discovered_by = eastern
 discovered_by = nomad_group
-fort1 = yes
+discovered_by = ottoman
 
 1399.10.14 = { owner = GOL controller = GOL add_core = GOL } # remove_core = LIV }
 1444.11.11 = { owner = KAZ controller = KAZ add_core = KAZ } # remove_core = LIV }
-1450.1.1  = { citysize = 6600 }
-1500.1.1  = { citysize = 7765 }
-1550.1.1  = { citysize = 9135 }
-1552.10.2  = { owner = RUS controller = RUS add_core = RUS remove_core = KAZ } # Russian conquest of Kazan
-1600.1.1  = { citysize = 10747 }
-1641.1.1  = { religion = orthodox culture = russian fort2 = yes capital = "Saransk" } # fortresses of Saransk and Penza founded
-1650.1.1  = { citysize = 12644 }
-1670.3.1   = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB revolt_risk = 6 } # Razin rebellion
-1671.4.14   = { revolt = { } controller = RUS revolt_risk = 0 } # Razin captured
-1680.1.1  = { marketplace = yes }
-1700.1.1  = { citysize = 12644 }
-1750.1.1  = { citysize = 14875 }
-1773.9.13  = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB revolt_risk = 6 } # Pugachev rebellion
-1775.2.1 = { revolt = {} controller = RUS revolt_risk = 0 } # Pugachev is captured
-1800.1.1  = { citysize = 19800 }
+1552.10.2 = { owner = RUS controller = RUS add_core = RUS remove_core = KAZ } # Russian conquest of Kazan
+1641.1.1 = { religion = orthodox culture = russian capital = "Saransk" } # fortresses of Saransk and Penza founded
+1670.3.1 = { revolt = { type = anti_tax_rebels size = 2 name = "Stepan Razin" } controller = REB unrest = 6 }
+1671.4.14 = { revolt = { } controller = RUS unrest = 0 } # Razin captured
+1773.9.13 = { revolt = { type = anti_tax_rebels size = 2 name = "Yemelyan Pugachev" } controller = REB unrest = 6 } # Pugachev rebellion
+1775.2.1 = { revolt = {} controller = RUS unrest = 0 } # Pugachev is captured

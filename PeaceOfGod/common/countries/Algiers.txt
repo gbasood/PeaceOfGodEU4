@@ -2,7 +2,7 @@
 
 graphical_culture = muslimgfx
 
-color = { 40 110 140 } 
+color = { 230  225  110 } 
 
 historical_score = 100
 

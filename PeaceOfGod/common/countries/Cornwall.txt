@@ -5,7 +5,7 @@ graphical_culture = westerngfx
 color = { 155  56  0 }
 
 historical_idea_groups = {
-	naval_ideas
+	maritime_ideas
 	aristocracy_ideas
 	trade_ideas
 	diplomatic_ideas

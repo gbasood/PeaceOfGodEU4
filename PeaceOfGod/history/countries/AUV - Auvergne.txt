@@ -1,16 +1,10 @@
 government = feudal_monarchy
-#aristocracy_plutocracy = -4
-#centralization_decentralization = 5
-#innovative_narrowminded = 2
-mercantilism = 0.1
-#offensive_defensive = 0
-#land_naval = -3
-#quality_quantity = 0
-#serfdom_freesubjects = -3
+government_rank = 1
 technology_group = western
 primary_culture = occitain
 religion = cathar
 capital = 199	# Clermont
+#fixed_capital = 199 # Cannot move capital away from this province & no power cost to move to it
 
 
 1394.1.1 = {

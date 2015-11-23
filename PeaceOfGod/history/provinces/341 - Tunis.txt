@@ -5,45 +5,60 @@ controller = PAP
 culture = maghreb_arabic
 religion = catholic
 capital = "Tunis"
-trade_goods = grain
+trade_goods = cloth
 hre = no
-base_tax = 7
-manpower = 4
-citysize = 90100
-fort1 = yes
+base_tax = 6 
+base_production = 6
+base_manpower = 2
+is_city = yes
 add_core = TUN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
+extra_cost = 15
 
-1000.1.1   = {
-		add_permanent_province_modifier = {
-			name = center_of_trade_modifier
-			duration = -1
-		}
+add_permanent_province_modifier = {
+	name = center_of_trade_modifier
+	duration = -1
 }
-1450.1.1  = { citysize = 93460 }
-1489.1.1  = { revolt_risk = 4 } # Abu Zikriya Yahya overthrown by Abul Mumin
-1490.1.1  = { revolt_risk = 0 } # Abu Yahya recaptures the power
-1500.1.1  = { citysize = 95467 }
-1534.1.1  = { revolt_risk = 5 } # Ottoman invasion
-1535.1.1  = { revolt_risk = 0  }
-1550.1.1  = { citysize = 96752 }
-1574.9.13 = {	owner = TUR
-		controller = TUR
-		add_core = TUR
-	    } # Directly controlled
-1591.1.1  = { revolt_risk = 6 } # Janissary revolt
-1592.1.1  = { revolt_risk = 0 }
-1600.1.1  = { citysize = 108981 }
-1650.1.1  = { citysize = 110548 }
-1659.1.1  = { marketplace = yes } # Became the center of French commercial life
-1700.1.1  = { citysize = 112879 }
-1702.1.1  = { revolt_risk = 4 add_core = ALG } # Military coup, Murad III is assassinated
-1703.1.1  = { revolt_risk = 0 }
-1705.1.1  = { tax_assessor = yes } # Husayn ibn Ali's rule brings some prosperity
-1735.1.1  = { revolt_risk = 6 } # Coup with Algerian support
-1750.1.1  = { citysize = 115670 constable = yes }
-1756.1.1  = { revolt_risk = 0 } # The Husaynid Dynasty is restored 
-1800.1.1  = { citysize = 119000 }
+
+1489.1.1 = { unrest = 4 } # Abu Zikriya Yahya overthrown by Abul Mumin
+1490.1.1 = { unrest = 0 } # Abu Yahya recaptures the power
+1534.8.16 = {
+	owner = ALG
+	controller = ALG
+	add_core = ALG
+} #Conquered by Barbarossa
+1535.6.11 = {
+	owner = TUN
+	controller = TUN
+	remove_core = ALG
+} #Spain reinstate Hafsids
+
+1569.1.1 = {
+	owner = ALG
+	controller = ALG
+	add_core = ALG
+} #Uluj Ali Pasha captures Tunis
+1573.1.1 = {
+	owner = TUN
+	controller = TUN
+	remove_core = ALG
+} #Spain reinstate Hafsids
+1574.1.1 = {
+	owner = ALG
+	controller = ALG
+	add_core = ALG
+} #End of the Hafsids, and of Spanish influence
+1591.1.1 = { unrest = 6 } # Janissary revolt
+1592.1.1 = { unrest = 0 }
+1593.1.1 = {
+	owner = TUN
+	controller = TUN
+	remove_core = ALG
+}#Tunisian Pashalik created
+1702.1.1 = { unrest = 4 add_core = ALG } # Military coup, Murad III is assassinated
+1703.1.1 = { unrest = 0 }
+1735.1.1 = { unrest = 6 } # Coup with Algerian support
+1756.1.1 = { unrest = 0 } # The Husaynid Dynasty is restored 

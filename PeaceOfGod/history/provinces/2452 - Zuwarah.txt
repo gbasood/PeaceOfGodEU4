@@ -1,0 +1,29 @@
+# - Zuwarah
+
+owner = TUN
+controller = TUN
+culture = tunisian
+religion = ibadi
+capital = "Zuwarah"
+trade_goods = fish
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = TUN
+add_core = TRP
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+# Peace of God
+1399.1.1 = { owner = PAP controller = PAP add_core = PAP}
+# Nevermind
+1400.1.1 = { owner = TRP controller = TRP remove_core = PAP}
+
+1558.1.1 = {
+	owner = TRP
+	controller = TRP
+} #Turgut Reis conquers Gharayan

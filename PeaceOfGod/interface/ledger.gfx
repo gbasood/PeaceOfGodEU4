@@ -19,7 +19,7 @@ spriteTypes = {
 		name = "GFX_ledger_income_sort_button_neighbors"
 		texturefile = "gfx/interface/ledger_income_sort_button_neighbors.dds"
 	}
-	
+
 
 	spriteType = {
 		name = "GFX_ledger_checkbox"
@@ -29,63 +29,57 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ledger_bookmark_button_buildings"
-		texturefile = "gfx\\interface\\ledger_bookmark_button_buildings.tga"
-		transparencecheck = yes
-	}
-	
-	spriteType = {
 		name = "GFX_ledger_bookmark_button_country"
 		texturefile = "gfx\\interface\\ledger_bookmark_button_country.tga"
 		transparencecheck = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_ledger_bookmark_button_economy"
 		texturefile = "gfx\\interface\\ledger_bookmark_button_economy.tga"
 		transparencecheck = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_ledger_bookmark_button_index"
 		texturefile = "gfx\\interface\\ledger_bookmark_button_index.tga"
 		transparencecheck = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_ledger_bookmark_button_military"
 		texturefile = "gfx\\interface\\ledger_bookmark_button_military.tga"
 		transparencecheck = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_ledger_bookmark_button_relations"
 		texturefile = "gfx\\interface\\ledger_bookmark_button_relations.tga"
 		transparencecheck = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_ledger_bookmark_button_trade"
 		texturefile = "gfx\\interface\\ledger_bookmark_button_trade.tga"
 		transparencecheck = yes
 	}
-	
-	
-	
-	
+
+
+
+
 	spriteType = {
 		name = "GFX_ledger_piechart_overlay"
 		texturefile = "gfx\\interface\\ledger_piechart_overlay.tga"
 		transparencecheck = yes
 		allwaystransparent = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_ledger_piechart_BG"
 		texturefile = "gfx\\interface\\ledger_piechart_BG.tga"
 		transparencecheck = yes
 	}
-	
+
 	spriteType = {
 		name = "GFX_ledger_index_BG"
 		texturefile = "gfx\\interface\\ledger_index_BG.tga"
@@ -97,7 +91,7 @@ spriteTypes = {
 		name = "GFX_religion_icon_strip"
 		texturefile = "gfx\\interface\\icon_religion_small.dds"
 		transparencecheck = yes
-		noOfFrames = 20
+		noOfFrames = 29
 	}
 	spriteType = {
 		name = "GFX_ledger_bg"
@@ -108,8 +102,8 @@ spriteTypes = {
 		name = "GFX_ledger_invisible_button"
 		texturefile = "gfx\\interface\\ledger_invisible_button.tga"
 		transparencecheck = no
-	}	
-	
+	}
+
 	spriteType = {
 		name = "GFX_ledger_linegraph_bg"
 		texturefile = "gfx\\interface\\ledger_linegraph_bg.tga"
@@ -122,10 +116,10 @@ spriteTypes = {
 	LineChartType = {
 		name = "GFX_ledger_line_default"
 		size = { x=690 y=485 }
-		linewidth = 2		
+		linewidth = 2
 	}
 	PieChartType = {
 		name = "GFX_ledger_piechart_default"
 		size = 128
-	}	
+	}
 }
